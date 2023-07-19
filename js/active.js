@@ -94,6 +94,12 @@
         $.preventDefault();
     });
 
+    $('[name="addtocart"]').click(function(event) {
+        event.preventDefault(); // Prevents the default form submission behavior
+    
+        window.location.href = "cart.html";
+    });
+
     // :: 11.0 Slider Range Price Active Code
     $('.slider-range-price').each(function () {
         var min = jQuery(this).data('min');
