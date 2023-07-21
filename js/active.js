@@ -104,10 +104,16 @@
         event.preventDefault(); // Prevents the default form submission behavior
         showAlert(); // Call the alert function
         navigateToHomePage();
-      });
+    });
+
+    $("#checkout-complete").click(function(event) {
+        event.preventDefault();
+        showThankYouMessage(); 
+        navigateToHomePage();
+    });
     
-    function showAlert() {
-        alert("Thanks for Subscribing!");
+    function showThankYouMessage() {
+        alert("Thanks for shopping with us!");
     }
 
     function navigateToHomePage() {
