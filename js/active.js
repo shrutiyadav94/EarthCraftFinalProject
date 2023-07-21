@@ -116,6 +116,10 @@
         alert("Thanks for shopping with us!");
     }
 
+    function showAlert() {
+        alert("Thanks for subscribing!");
+    }
+
     function navigateToHomePage() {
         // Replace 'home.html' with the actual URL of your home page
         window.location.href = 'index.html';
