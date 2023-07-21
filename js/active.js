@@ -100,6 +100,16 @@
         window.location.href = "cart.html";
     });
 
+    $("#subscribe_form").submit(function(event) {
+        event.preventDefault(); // Prevents the default form submission behavior
+        showAlert(); // Call the alert function
+        this.submit(); // Submit the form programmatically after showing the alert
+      });
+    
+    function showAlert() {
+        alert("Thanks for Subscribing!");
+    }
+
     // :: 11.0 Slider Range Price Active Code
     $('.slider-range-price').each(function () {
         var min = jQuery(this).data('min');
